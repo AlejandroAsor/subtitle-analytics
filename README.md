@@ -31,3 +31,7 @@ These word lists can be used for various applications, such as:
 ## Credits
 
 This dataset was created by Alejandro Asor Corrales Gomez. If you use this dataset in your research or project, please acknowledge the source by citing Alejandro Asor Corrales Gomez and linking to the GitHub repository (https://github.com/AlejandroAsor).
+
+## License
+
+This project is licensed under the MIT License. Please see the [LICENSE](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/LICENSE) file in the repository for more details on the terms and conditions of the license.
