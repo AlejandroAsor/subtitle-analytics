@@ -10,6 +10,26 @@ The OpenSubtitles corpus is freely available for research purposes. For more inf
 
 Citation: P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles. In Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016).
 
+## Word Lists
+
+The word lists are available in the `data` directory of the repository. There are different files for different sizes of lists, ranging from 1,000 to more than 1,000,000 words.
+
+To access the word list files, download the file(s) you need. Each file contains a list of words and their frequency count, separated by a comma.
+
+Here's a list of the available files:
+
+- [top_1000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_1000.csv)
+- [top_3000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_3000.csv)
+- [top_5000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_5000.csv)
+- [top_10000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_10000.csv)
+- [top_30000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_30000.csv)
+- [top_50000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_50000.csv)
+- [top_100000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_100000.csv)
+- [top_300000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_300000.csv)
+- [top_500000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_500000.csv)
+- [top_1000000_words.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/words_100000.csv)
+- [all_words_clean.csv](https://github.com/AlejandroAsor/subtitle-analytics/blob/main/all_words_clean.csv)(contains all words with their frequency count)
+
 ## File Format
 
 The word lists are available in CSV format, with each line containing a word and its frequency count, separated by a comma. Example:
@@ -27,6 +47,7 @@ These word lists can be used for various applications, such as:
 - Linguistic research on English movie and series language
 - Natural language processing tasks, like text generation, text classification, and sentiment analysis
 - Creating learning materials for English language learners focused on movie and series vocabulary
+- Others
 
 ## Credits
 
