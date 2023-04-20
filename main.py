@@ -11,22 +11,22 @@ def process_xml_files_in_folder(folder):
     word_count = Counter()
 
     for root, dirs, files in os.walk(folder):
-        # Encuentra todos los archivos XML en la carpeta actual
+        # Find all XML files in the current folder
         xml_files = glob.glob(os.path.join(root, "*.xml"))
 
         for xml_file in xml_files:
-            # Imprime la ruta del archivo actual
+            # Print the path of the current file
             print("Procesando archivo:", xml_file)
 
-            # Analiza el archivo XML
+            # Parse the XML file
             with open(xml_file, "r") as f:
                 xml_data = f.read()
 
-            # Remueve todas las etiquetas XML del texto
+            # Remove all XML tags from the text
             import re
             clean_data = re.sub('<.*?>', '', xml_data)
 
-            # Extrae el texto de los subtítulos y cuenta las palabras (sin distinción de mayúsculas y minúsculas)
+            # Extract the text from the subtitles and count the words (case-insensitive)
             words = casual_tokenize(clean_data.lower())
             word_count.update(words)
 
@@ -37,14 +37,14 @@ def save_to_csv(word_count, output_file):
     df = df.sort_values('count', ascending=False)
     df.to_csv(output_file, index=False)
 
-# Directorio principal que contiene las carpetas
-parent_folder = "/Users/alejandroasor/Documents/en/"
+# Main directory containing the folders
+parent_folder = "/path/to/main/directory"
 output_file = "word_count.csv"
 
 total_word_count = process_xml_files_in_folder(parent_folder)
 
-# Muestra el recuento total de palabras
+# Display the total word count
 print(total_word_count)
 
-# Guarda el recuento de palabras en un archivo CSV
+# Save the word count to a CSV file
 save_to_csv(total_word_count, output_file)
