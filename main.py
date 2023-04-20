@@ -39,7 +39,7 @@ def save_to_csv(word_count, output_file):
 
 # Directorio principal que contiene las carpetas
 parent_folder = "/Users/alejandroasor/Documents/en/"
-output_file = "word_count.csv"
+output_file = "all_words_raw.csv"
 
 total_word_count = process_xml_files_in_folder(parent_folder)
 
