@@ -12,7 +12,7 @@ Citation: P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large P
 
 ## Word Lists
 
-The word lists are available in the `data` directory of the repository. There are different files for different sizes of lists, ranging from 1,000 to more than 1,000,000 words.
+The word lists are available in the repository. There are different files for different sizes of lists, ranging from 1,000 to more than 1,000,000 words.
 
 To access the word list files, download the file(s) you need. Each file contains a list of words and their frequency count, separated by a comma.
 
